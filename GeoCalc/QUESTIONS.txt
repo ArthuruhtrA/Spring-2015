@@ -1,0 +1,41 @@
+These questions all concern the code in the driver program, geocalc.rb
+
+Consider the first executable line:
+
+   $stdin.each do | line; figure, command, x0, y0, x1, y1, p1, p2 |
+
+1. (1 point) What is passed to the 'line' variable by the each method?
+
+<< Replace With Your Answer >>
+
+2. (1 point) What is the purpose of the semi-colon (';') and the list of
+   identifiers that follow it. You'll have to look this up in the Ruby
+   on-line documentation.
+
+<< Replace With Your Answer >>
+
+3. (1 point) The syntax of commands is given in the comments at the head
+   of the file, namely:
+
+   C,X0,Y0,X1,Y1
+
+   Given this, what does line.split(',') do? Hint: you need to look up the
+   split method for class String in the Ruby documentation.
+
+<< Replace With Your Answer >>
+
+4. (1 point) The complete statment using line.split(',') is:
+
+   command, x0, y0, x1, y1 = line.split(',')
+
+   This is an example of Ruby's multiple assignment construct. Look up how
+   multiple assignment works and describe how multiple assignment, in
+   combination with line.split(','), ends up assigning the command character
+   and the four points to the appropriate variables on the left side of '='.
+
+<< Replace With Your Answer >>
+
+5. (2 points) Describe how the case statement works in terms of how it
+   executes the proper code for each command.
+
+<< Replace With Your Answer >>

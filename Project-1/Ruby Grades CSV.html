@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0061)http://www.se.rit.edu/~swen-250/projects/Project-1/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+
+
+<title>Ruby Grades CSV</title><style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:18.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:13.5pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri Light","sans-serif";
+	color:#2E74B5;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Calibri Light","sans-serif";
+	color:#1F4D78;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Calibri Light","sans-serif";
+	color:#2E74B5;
+	font-style:italic;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style></head>
+<body link="blue" vlink="blue">
+
+<div class="WordSection1"><div style="text-align: center;">
+
+
+
+</div><h1 style="text-align: center;"><span style="font-size: 14pt;">SWEN-250 Personal Software Engineering<br>Project 1 - Ruby Grades CSV<o:p></o:p></span></h1>
+
+<h3><span style="font-size: 12pt;">Overview<o:p></o:p></span></h3>
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><span style="font-size: 11pt;">For this project you will develop a Ruby script to
+process Comma Separated Value (CSV) files representing a class grade book. <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><span style="font-size: 11pt;">The format of a grading CSV file is as follows:<o:p></o:p></span></p>
+
+<ol><li><span style="font-size: 11pt;"><span style=""><span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;"></span></span></span><span style="font-size: 11pt;">The <b style="">first line is a list of headings</b> to be applied to the associated
+information in the lines that follow. You may assume that there are no empty
+headings, and that the headings contain only letters and digits. You may also
+assume that all lines after the first have exactly the same number of fields as
+this header line.</span></li><li><span style="font-size: 11pt;">The <b style="">second line is a set of numeric weights</b>, giving the relative
+contribution of the grade in the associated column to the overall grade. Each
+field is either:</span></li><ul><li><span style="font-size: 11pt;">Empty (in which case the
+associated column does not contribute to the grade, for example, a student
+name), or</span></li></ul><ul><li><span style="font-size: 11pt;">An integer giving the weight
+0-100 (relative to a total of 100) for the grade item in this column. You may assume this value will always be 0-100.</span></li></ul><li><span style="font-size: 11pt;">The <span style="font-weight: bold;">third</span> and following
+lines all record the grade information for individual students, one
+student per
+line.&nbsp;</span></li></ol>
+
+<p class="MsoNormal" style="margin: 0in 0in 6pt 0.25in; text-indent: -0.25in;"><span style="font-size: 11pt;"> <o:p></o:p></span></p>
+
+
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><b style=""><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">example.csv</span></b></p><p class="MsoNormal" style="margin-bottom: 6pt;"><span style=""><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Last,First,Exam,Homework,Attendance<br>
+,,50,30,20<br>
+Awesome,Abigail,98,95,100<br>
+Doofus,Douglas,75,65,60<o:p></o:p></span></b></span></p>
+
+<span style=""></span><span style=""></span>
+
+
+
+<p class="MsoNormal" style="margin-bottom: 12pt; text-align: left;"><span style="font-size: 11pt;">The file <span style="font-weight: bold;">example.csv</span> is provided for you. Other
+files may have a different number of columns, different column headings, a
+different number of student grade lines, different student names, etc. </span><span style="font-size: 11pt;">You should&nbsp;consider creating other&nbsp;files to use for your own testing.</span><span style="font-size: 11pt;"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 6pt 0in;"><span style="font-size: 11pt;">All
+input is read from the standard input (via input redirection from a file), and
+all output is written to the standard output. There is no need to explicitly
+open and close files, or to process any command line arguments. A standard
+invocation of the script would look like:<o:p></o:p></span></p>
+
+<b style=""><span style="font-size: 11pt; font-family: &quot;Lucida Sans Typewriter&quot;;"><small>ruby grades.rb &lt; example.csv</small><o:p></o:p></span></b>
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><span style="font-size: 11pt;">&nbsp;<o:p style="font-weight: bold;"></o:p></span></p>
+
+<big><big><big><font size="+2"><big><big><big><span style="font-size: 11pt;"><span style="font-weight: bold;">Project Instructions - There are two distinct releases for this project - PLEASE READ CAREFULLY</span><br><big><br></big></span></big></big></big></font></big></big></big><p>Download the following files to a directory in your repository name <span style="font-weight: bold;">Project-1</span></p><ul><li><a href="http://www.se.rit.edu/~swen-250/projects/Project-1/grades.rb"><span style="font-weight: bold;">grades.rb</span></a> - starter code for the Ruby script that will read *.csv files and produce grade reports</li><li><a href="http://www.se.rit.edu/~swen-250/projects/Project-1/grades_util.rb"><span style="font-weight: bold;">grades_util.rb</span></a> - starter code for the Ruby methods that will be invoked by grades.rb<big></big></li><li><a href="http://www.se.rit.edu/~swen-250/projects/Project-1/test_grades.rb"><span style="font-weight: bold;">test_grades.rb</span></a> - starter code for the Ruby unit tests for methods in grades_util.rb</li><li><a href="http://www.se.rit.edu/~swen-250/projects/Project-1/example.csv"><span style="font-weight: bold;">example.csv</span></a> - the sample input file used in the overview section</li><li><big><small><a href="http://www.se.rit.edu/~swen-250/projects/Project-1/activity_journal.txt"><span style="font-weight: bold;">activity_journal.txt</span></a> - the project journal file</small><br></big></li></ul><h2><small><small>Release 1 - Writing and testing grades_util methods</small></small></h2><p>In the first release we'll focus on developing the support methods in <span style="font-weight: bold;">grades_util.rb</span> that will be used by <span style="font-weight: bold;">grades.rb </span>to
+read csv files and produce grade reports. Complete the following
+methods in grades_util.rb and create unit tests that thoroughly test
+each method:</p><ul><li style="font-weight: bold;">get_CSV_line</li><li style="font-weight: bold;">numeric_to_letter</li><li style="font-weight: bold;">sum_weights</li><li style="font-weight: bold;">compute_grade</li></ul><ul><li><span style="font-weight: bold;">print_summary</span> is given for you and you <span style="font-weight: bold; font-style: italic;">do not</span> need to modify that method or create unit tests for it</li></ul><p>Note that Release 1 does not involve <span style="font-weight: bold;">grades.rb</span> or reading csv files. The methods in <span style="font-weight: bold;">grades_util.rb</span> are exclusively invoked from the unit tests in <span style="font-weight: bold;">test_grades.rb</span>. See the sample test in <span style="font-weight: bold;">test_grades.rb</span>.</p><br><p><span style="font-weight: bold;">Release 1 Submission</span></p><p><big><span style="font-weight: bold;"></span><small>By the due date specified on the class website, push the directory <span style="font-weight: bold;">Project-1</span> to your pushbox. It&nbsp;will include:</small></big></p><ul><li><span style="font-weight: bold;">grades_util.rb</span> &nbsp;- completed support methods</li><li><span style="font-weight: bold;">test_grades.rb</span> &nbsp;- completed unit tests for grades_util.rb</li><li><span style="font-weight: bold;">activity_journal.txt </span>- completed activity journal file through Release 1 (see activity_log.txt for specific instructions)</li></ul><p><big><span style="font-size: 11pt;"><span style="font-weight: bold; font-style: italic;">If you do not make a Release 1 submission by the specified due date, you will lose 15 points </span>(out
+of 100) for the overall project grade (i.e. - your best possible grade
+would be 85/100). &nbsp;Final grading for the support methods and unit
+tests will be done after the submission of Release 2, so you may
+continue to modify them after the Release 1 due date.</span></big></p><p class="MsoNormal" style="margin-bottom: 6pt;"></p><p class="MsoNormal" style="margin-bottom: 6pt;"><span style="font-weight: bold;">Release 2 Submission</span></p><span style="font-weight: bold;"></span>By the due date specified on the class website, push the directory <span style="font-weight: bold;">Project-1</span> to your pushbox. It&nbsp;will include:<br><ul><li><span style="font-weight: bold;">grades.rb</span> - completed script for reading csv files and producing grade reports<span style="font-weight: bold;"></span></li><li><span style="font-weight: bold;">grades_util.rb</span> &nbsp;- completed support methods</li><li><span style="font-weight: bold;">test_grades.rb</span> &nbsp;- completed unit tests for grades_util.rb</li><li><span style="font-weight: bold;">activity_journal.txt </span>- completed activity journal file through Release 2 (see activity_journal.txt for specific instructions)</li></ul>
+
+To encourage incremental development there are 6 levels of
+submissions.&nbsp;You may stop at any level and receive up to the cumulative
+grade at that point, but you must have submitted an entry for all preceding
+levels.&nbsp;When you have completed a level, use the commit message "<span style="font-weight: bold;">*** Level n
+Complete ***</span>" <b><u>before</u></b> starting the next level. Only your last
+completed level will be graded, but your git log must demonstrate that you
+developed and tested&nbsp;the application incrementally to receive full credit.<h2><span style="font-size: 12pt;">Level 1 (5 points)<o:p></o:p></span></h2>
+
+<p class="MsoNormal" style="margin-bottom: 6pt; page-break-after: avoid;"><span style="font-size: 11pt;">For level 1 read the first two lines and print out the column headings and weights, one heading per line.&nbsp;</span></p><p class="MsoNormal" style="margin-bottom: 6pt; page-break-after: avoid;"><span style="font-size: 11pt;">For the example above, the output would be <span style="font-weight: bold;">EXACTLY</span>:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Summary information for grades file</span></b></p><p class="MsoNormal" style="margin-bottom: 6pt;"><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">
+Last<br>
+First<br>
+Exam 50%<br>
+Homework 30%<br>
+Attendance 20%</span></b></p>
+
+
+
+<h2><span style="font-size: 12pt;">Level 2 (5 points)</span><br><span style="font-size: 11pt;"></span></h2><h3 style="font-weight: normal;"><span style="font-size: 11pt;">Verify
+that&nbsp;the sum of entered weights are exactly 100%. If&nbsp;not,
+output the following error message&nbsp;and exit the program</span></h3><h3 style="font-weight: normal; margin-left: 40px;"><span style="font-size: 11pt;"></span><span style="font-size: 11pt;"><span style="font-weight: bold;">Weights add up to xx, not 100</span> &nbsp; ( where xx = sum of the input weights)</span></h3><p class="MsoNormal" style="margin-bottom: 6pt;"><span style="font-size: 11pt;">Assume we change the example input CSV file to the
+following:<o:p></o:p></span></p>
+
+<b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Last,First,Exam,Homework,Attendance<br>
+,,50,30,10<br>
+Awesome,Abigail,a+,95,100<br>
+Doofus,Douglas,75,D,60</span></b><span style="font-family: &quot;Courier New&quot;;"><span style="font-weight: bold;"><br></span></span><p class="MsoNormal" style="margin-bottom: 6pt;"><span style="font-size: 11pt;">The output would be:</span></p><p class="MsoNormal" style="margin-bottom: 6pt;"><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Summary information for grades file</span></b></p><p class="MsoNormal" style="margin-bottom: 6pt;"><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">
+Last<br>
+First<br>
+Exam 50%<br>
+Homework 30%<br>
+Attendance 10%</span></b></p><p class="MsoNormal" style="margin-bottom: 6pt;"><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Weights add up to 90, not 100</span></b></p><h3><br><span style="font-size: 12pt;">Level 3 (5 points)<o:p></o:p></span></h3>
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><span style="font-size: 11pt;">This level will read and output each line of student grade
+information. For each field in such a grade line, the output is the field
+header (from the first line in the file) and the contents of the associated
+field from the student grade line. For our example, the output would be:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Summary information for grades file<br>
+<br>
+Last<br>
+First<br>
+Exam 50%<br>
+Homework 30%<br>
+Attendance 20%<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;"><o:p>&nbsp;</o:p></span></b></p>
+
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Last: Awesome<br>
+First: Abigail<br>
+Exam: 98<br>
+Homework: 95<br>
+Attendance: 100<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;"><o:p>&nbsp;</o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Last: Doofus<br>
+First: Douglas<br>
+Exam: 75<br>
+Homework: 65<br>
+Attendance: 60<o:p></o:p></span></b></p>
+
+<h3><span style="font-size: 12pt;">Level 4 (10 points)<o:p></o:p></span></h3>
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><span style="font-size: 11pt;">For this level you will compute each students final
+numeric and letter grade. The final numeric grade is the sum of each received
+grade times the associated weight divided by 100. The letter grades are
+assigned using the normal scheme: 90 and above is an A, 80 up to 90 is a B, 70
+up to 80 is a C, 60 up to 70 is a D, and anything less than 60 is an F.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><span style="font-size: 11pt;">Below is the output for our sample file:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Summary information for grades file<br>
+<br>
+Last<br>
+First<br>
+Exam 50%<br>
+Homework 30%<br>
+Attendance 20%<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;"><o:p>&nbsp;</o:p></span></b></p>
+
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Last: Awesome<br>
+First: Abigail<br>
+Exam: 98<br>
+Homework: 95<br>
+Attendance: 100<br>
+Final Numeric Grade = 97 Letter = A<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;"><o:p>&nbsp;</o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Last: Doofus<br>
+First: Douglas<br>
+Exam: 75<br>
+Homework: 65<br>
+Attendance: 60<br>
+Final Numeric Grade = 69 Letter = D<o:p></o:p></span></b></p>
+
+<h3><span style="font-size: 12pt;">Level 5 (5 points)<o:p></o:p></span></h3>
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><span style="font-size: 11pt;">For this level we will add in support for letter
+grades as well as numeric grades. That is, <b style=""><i style="">any</i></b> field that previously could hold
+a numeric grade may now hold a letter grade (the letters themselves may be
+either upper or lower case). It is even possible that, for a given field, some
+students will have a letter grade while others will have numeric grades.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><span style="font-size: 11pt;">The letter to numeric correspondence is shown in the
+table below – the fact that the letters are all upper case <b style=""><i style="">does not</i></b> mean that only
+upper case letters will be in the grades file!<o:p></o:p></span></p>
+
+<div align="center">
+
+<table class="MsoNormalTable" style="border: medium none ; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+ <tbody><tr style="">
+  <td style="border-style: solid none solid solid; border-color: windowtext -moz-use-text-color windowtext windowtext; border-width: 1pt medium 1pt 1pt; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal"><span style="font-size: 11pt;">A+<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal" style="text-align: right;" align="right"><span style="font-size: 11pt;">98<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: solid none; border-color: windowtext -moz-use-text-color; border-width: 1pt medium; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal"><span style="font-size: 11pt;">B+<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal" style="text-align: right;" align="right"><span style="font-size: 11pt;">88<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: solid none; border-color: windowtext -moz-use-text-color; border-width: 1pt medium; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal"><span style="font-size: 11pt;">C+<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal" style="text-align: right;" align="right"><span style="font-size: 11pt;">78<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: solid none; border-color: windowtext -moz-use-text-color; border-width: 1pt medium; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal"><span style="font-size: 11pt;">D+<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal" style="text-align: right;" align="right"><span style="font-size: 11pt;">68<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: solid none; border-color: windowtext -moz-use-text-color; border-width: 1pt medium; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal"><span style="font-size: 11pt;">F+<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal" style="text-align: right;" align="right"><span style="font-size: 11pt;">55<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none none solid solid; border-color: -moz-use-text-color -moz-use-text-color windowtext windowtext; border-width: medium medium 1pt 1pt; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal"><span style="font-size: 11pt;">A<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal" style="text-align: right;" align="right"><span style="font-size: 11pt;">95<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal"><span style="font-size: 11pt;">B<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal" style="text-align: right;" align="right"><span style="font-size: 11pt;">85<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal"><span style="font-size: 11pt;">C<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal" style="text-align: right;" align="right"><span style="font-size: 11pt;">75<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal"><span style="font-size: 11pt;">D<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal" style="text-align: right;" align="right"><span style="font-size: 11pt;">65<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal"><span style="font-size: 11pt;">F<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal" style="text-align: right;" align="right"><span style="font-size: 11pt;">40<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none none solid solid; border-color: -moz-use-text-color -moz-use-text-color windowtext windowtext; border-width: medium medium 1pt 1pt; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal"><span style="font-size: 11pt;">A-<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal" style="text-align: right;" align="right"><span style="font-size: 11pt;">92<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal"><span style="font-size: 11pt;">B-<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal" style="text-align: right;" align="right"><span style="font-size: 11pt;">82<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal"><span style="font-size: 11pt;">C-<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal" style="text-align: right;" align="right"><span style="font-size: 11pt;">72<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal"><span style="font-size: 11pt;">D-<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal" style="text-align: right;" align="right"><span style="font-size: 11pt;">62<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal"><span style="font-size: 11pt;">F-<o:p></o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt;" valign="top">
+  <p class="MsoNormal" style="text-align: right;" align="right"><span style="font-size: 11pt;">25<o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+</div>
+
+<p class="MsoNormal" style="margin: 6pt 0in;"><span style="font-size: 11pt;">Individual
+grades will be printed as numbers or letters based on the value in the
+associated field. The final numeric grade, however, will be computed using the
+table of equivalences above.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><b style=""><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"></span></b><span style="font-size: 11pt;"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><span style="font-size: 11pt;">Assume we change the example input CSV file to the
+following:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Last,First,Exam,Homework,Attendance<br>
+,,50,30,20<br>
+Awesome,Abigail,a+,95,100<br>
+Doofus,Douglas,75,D,60<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><span style="font-size: 11pt;">Then the output would look like the following:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Summary information for grades file<br>
+<br>
+Last<br>
+First<br>
+Exam 50%<br>
+Homework 30%<br>
+Attendance 20%<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;"><o:p>&nbsp;</o:p></span></b></p>
+
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Last: Awesome<br>
+First: Abigail<br>
+Exam: a+<br>
+Homework: 95<br>
+Attendance: 100<br>
+Final Numeric Grade = 97 Letter = A<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;"><o:p>&nbsp;</o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Last: Doofus<br>
+First: Douglas<br>
+Exam: 75<br>
+Homework: D<br>
+Attendance: 60<br>
+Final Numeric Grade = 69 Letter = D<o:p></o:p></span></b></p>
+
+<h3><span style="font-size: 12pt;">Level 6 (5 points)<o:p></o:p></span></h3>
+
+
+
+
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><span style="font-size: 11pt;">For the final level, provide a summary of the
+grades for the class as a whole which includes the number of
+A’s, B’s, etc., as well as the overall class GPA. The class GPA is simply the
+count of A’s times 4 plus B’s times 3 plus C’s times 2 plus D’s times 1 divided
+by the total number of students in the class.<br><o:p></o:p></span></p>
+
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Summary information for grades file<br>
+<br>
+Last<br>
+First<br>
+Exam 50%<br>
+Homework 30%<br>
+Attendance 20%<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;"><o:p>&nbsp;</o:p></span></b></p>
+
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Last: Awesome<br>
+First: Abigail<br>
+Exam: a+<br>
+Homework: 95<br>
+Attendance: 100<br>
+Final Numeric Grade = 97 Letter = A<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;"><o:p>&nbsp;</o:p></span></b></p>
+
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Last: Doofus<br>
+First: Douglas<br>
+Exam: 75<br>
+Homework: D<br>
+Attendance: 60<br>
+Final Numeric Grade = 69 Letter = D<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style=""><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;"><o:p>&nbsp;</o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><b style=""><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">A = 1<br>
+B = 0<br>
+C = 0<br>
+D = 1<br>
+F = 0<br>
+Class GPA = 2.50<o:p></o:p></span></b></p>
+
+<h3><span style="font-size: 12pt;">Quality Assessment
+&amp; Project Journal (15 points)<o:p></o:p></span></h3>
+
+<ul><li>Effective use of source control - frequency of submissions, quality of
+commit messages.</li><li>Clear, concise, and correct comments before methods, and
+significant blocks of code.</li><li>Consistent indentation following the Ruby conventions (2 space indentation).</li><li>Estimate and
+track your effort for as many of the levels as you complete, using this&nbsp;<a href="http://www.se.rit.edu/~swen-250/projects/Project-1/activity_journal.txt">Activity Journal</a>.</li></ul>
+
+
+
+<span style="font-size: 12pt; font-weight: bold;">Grading Summary (100 points)</span><ul><li><span style="font-weight: bold;">grades_util.rb</span> methods ( against our unit tests ) : 30 points</li><li><span style="font-weight: bold;">test_grades.rb</span> (quality of your unit tests) : 20 points</li><li>Level 1 - <span style="font-weight: bold;">grades.rb</span> : 5 points</li><li>Level 2 - <span style="font-weight: bold;">grades.rb</span> : 5 points</li><li>Level 3 - <span style="font-weight: bold;">grades.rb</span> : 5 points</li><li>Level 4 - <span style="font-weight: bold;">grades.rb</span> : 10 points</li><li>Level 5 - <span style="font-weight: bold;">grades.rb</span> : 5 points</li><li>Level 6 - <span style="font-weight: bold;">grades.rb</span> : 5 points</li><li>Quality &amp; <span style="font-weight: bold;">activity_journal.txt</span> : 15 points</li><li><big><small><span style="font-weight: bold; font-style: italic;">(No Release 1 Submission : -15 points)</span></small><br></big></li></ul><p class="MsoNormal" style="margin-bottom: 6pt;"></p><p class="MsoNormal" style="margin-bottom: 6pt;"><span style="font-size: 11pt;"><o:p></o:p></span></p>
+</div>
+
+</body></html>

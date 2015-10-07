@@ -1,0 +1,84 @@
+SWEN-250 Project Activity Journal
+Home Security "C" Project - Part 2
+
+Name: Ari Sanders
+
+===========  Makefile ==========================================
+Start
+Estimated Time	00 05
+Plan:
+(Order of implementation, testing approach, estimation technique)
+I will write the file and see if it works. If not, I will change based on
+ previous Makefiles. Repeat until it works.
+Estimation was based on the fact that it doesn't take long to write a Makefile.
+
+Complete
+Actual Time	00 05
+Observations:
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+It worked.
+
+===========  Level 1  ==========================================
+Start
+Estimated Time	01 30
+Plan:
+(Order of implementation, testing approach, estimation technique)
+First, I'll write the code for the main loop. Next step is to write the code
+ to parse an event. Finally, write the code to make a new event. Throughout,
+ as I finish a function, I will attempt to compile to ensure it is functional.
+At this point, testing can begin. I will input the level one test file. If it
+ works, I'll move on to level two. I know I should test other things, but I'm
+ short on time. If it does not compile, I will use gdb to find the error. If it
+ does, I will look through my code intensely, changing things that don't look
+ right, comparing things to previous code, checking against the internet, until
+ I find the faulty code and fix it.
+Estimation was done somewhat randomly. I don't have a sense of time, so I
+ guess. I didn't finish the first part of the project, so I have no point of
+ comparison. And C takes me longer than Ruby did, because it's more complicated
+ and refuses to work for me. Plus I hate printing things in C, so I avoid doing
+ that in my debugging process.
+
+Complete
+Actual Time	04 00
+Observations:
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+Well, I of course underestimated that. I also took way too long to solve simple
+ problems and got distracted a lot.
+I learned to re-read the instructions when something doesn't work right.
+I encountered some weird issues with pointers, of course. Also one where I was
+ adding my nodes to the wrong end of the list.
+
+===========  Level 2  ==========================================
+Start
+Estimated Time	00 30
+Plan:
+(Order of implementation, testing approach, estimation technique)
+I just have to modify the previous code slightly to add this. Shouldn't take
+ long.
+I will add the two necessary functions first, then modify the parser.
+
+Complete
+Actual Time	HH MM
+Observations:
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+===========  Level 3  ==========================================
+Start
+Estimated Time	HH MM
+Plan:
+(Order of implementation, testing approach, estimation technique)
+
+Complete
+Actual Time	HH MM
+Observations:
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+===========  PROJECT PART 1 SUMMARY REFLECTION  =======================
+(Replace this text with a couple of paragraphs summarizing your
+experience with this project. What is too easy or too hard? What
+was the most challenging technical problem you faced? How
+did your estimated and actual time compare? Did your estimates
+improve as you advanced to later stages? Why or why not?)
+===============================================================

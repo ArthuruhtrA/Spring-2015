@@ -1,0 +1,74 @@
+SWEN-250 Project Activity Journal
+Home Security "C" Project - Part 1
+
+Name: Ari Sanders
+
+===========  Stage 1  ==========================================
+Start
+Estimated Time	00 30
+Plan:
+(Order of implementation, testing approach, estimation technique)
+First, I will have it print what it reads. When I know this is correct, I will then have it parse the data, and print the result of that.
+To test, I will run the provided test files and ensure I am getting the same output I've been told I should. If not, additional tests may be devised to determine the error.
+To be honest, I have neither a sense of time nor the ability to estimate how long something takes. Therefore, I picked a number (30 minutes) and am hoping this is the right number.
+
+Complete
+Actual Time	HH MM
+Observations:
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+===========  Stage 2  ==========================================
+Start
+Estimated Time	HH MM
+Plan:
+(Order of implementation, testing approach, estimation technique)
+
+Complete
+Actual Time	HH MM
+Observations:
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+===========  Stage 3  ==========================================
+Start
+Estimated Time	HH MM
+Plan:
+(Order of implementation, testing approach, estimation technique)
+
+Complete
+Actual Time	HH MM
+Observations:
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+===========  Stage 4  ==========================================
+Start
+Estimated Time	HH MM
+Plan:
+(Order of implementation, testing approach, estimation technique)
+
+Complete
+Actual Time	HH MM
+Observations:
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+===========  Stage 5  ==========================================
+Start
+Estimated Time	HH MM
+Plan:
+(Order of implementation, testing approach, estimation technique)
+
+Complete
+Actual Time	HH MM
+Observations:
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+===========  PROJECT PART 1 SUMMARY REFLECTION  =======================
+(Replace this text with a couple of paragraphs summarizing your
+experience with this project. What is too easy or too hard? What
+was the most challenging technical problem you faced? How
+did your estimated and actual time compare? Did your estimates
+improve as you advanced to later stages? Why or why not?)
+================================================================
