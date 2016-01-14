@@ -1,0 +1,232 @@
+-- Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, the Altera Quartus II License Agreement,
+-- the Altera MegaCore Function License Agreement, or other 
+-- applicable license agreement, including, without limitation, 
+-- that your use is for the sole purpose of programming logic 
+-- devices manufactured by Altera and sold by Altera or its 
+-- authorized distributors.  Please refer to the applicable 
+-- agreement for further details.
+
+-- PROGRAM		"Quartus II 64-Bit"
+-- VERSION		"Version 14.1.1 Build 190 01/19/2015 SJ Web Edition"
+-- CREATED		"Wed Mar 18 21:16:08 2015"
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all; 
+
+LIBRARY work;
+
+ENTITY Lab07 IS 
+	PORT
+	(
+		S1 :  IN  STD_LOGIC;
+		S2 :  IN  STD_LOGIC;
+		S3 :  IN  STD_LOGIC;
+		P2 :  OUT  STD_LOGIC;
+		P1 :  OUT  STD_LOGIC
+	);
+END Lab07;
+
+ARCHITECTURE bdf_type OF Lab07 IS 
+
+SIGNAL	gdfx_temp0 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_24 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_25 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_26 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_4 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_27 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_28 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_9 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_29 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_30 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_14 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_31 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_32 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_19 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_33 :  STD_LOGIC;
+
+
+BEGIN 
+SYNTHESIZED_WIRE_24 <= '1';
+SYNTHESIZED_WIRE_31 <= '0';
+
+
+
+PROCESS(S3,gdfx_temp0)
+BEGIN
+if (gdfx_temp0 = '1') THEN
+	SYNTHESIZED_WIRE_32 <= S3;
+ELSE
+	SYNTHESIZED_WIRE_32 <= 'Z';
+END IF;
+END PROCESS;
+
+
+PROCESS(SYNTHESIZED_WIRE_24,gdfx_temp0)
+BEGIN
+if (gdfx_temp0 = '1') THEN
+	SYNTHESIZED_WIRE_32 <= SYNTHESIZED_WIRE_24;
+ELSE
+	SYNTHESIZED_WIRE_32 <= 'Z';
+END IF;
+END PROCESS;
+
+
+PROCESS(SYNTHESIZED_WIRE_25,gdfx_temp0)
+BEGIN
+if (gdfx_temp0 = '1') THEN
+	SYNTHESIZED_WIRE_28 <= SYNTHESIZED_WIRE_25;
+ELSE
+	SYNTHESIZED_WIRE_28 <= 'Z';
+END IF;
+END PROCESS;
+
+
+PROCESS(SYNTHESIZED_WIRE_26,SYNTHESIZED_WIRE_4)
+BEGIN
+if (SYNTHESIZED_WIRE_4 = '1') THEN
+	P1 <= SYNTHESIZED_WIRE_26;
+ELSE
+	P1 <= 'Z';
+END IF;
+END PROCESS;
+
+
+PROCESS(SYNTHESIZED_WIRE_24,SYNTHESIZED_WIRE_27)
+BEGIN
+if (SYNTHESIZED_WIRE_27 = '1') THEN
+	SYNTHESIZED_WIRE_29 <= SYNTHESIZED_WIRE_24;
+ELSE
+	SYNTHESIZED_WIRE_29 <= 'Z';
+END IF;
+END PROCESS;
+
+
+PROCESS(S3,gdfx_temp0)
+BEGIN
+if (gdfx_temp0 = '1') THEN
+	SYNTHESIZED_WIRE_29 <= S3;
+ELSE
+	SYNTHESIZED_WIRE_29 <= 'Z';
+END IF;
+END PROCESS;
+
+
+SYNTHESIZED_WIRE_9 <= NOT(S2);
+
+
+
+SYNTHESIZED_WIRE_27 <= NOT(gdfx_temp0);
+
+
+
+PROCESS(SYNTHESIZED_WIRE_28,SYNTHESIZED_WIRE_9)
+BEGIN
+if (SYNTHESIZED_WIRE_9 = '1') THEN
+	SYNTHESIZED_WIRE_30 <= SYNTHESIZED_WIRE_28;
+ELSE
+	SYNTHESIZED_WIRE_30 <= 'Z';
+END IF;
+END PROCESS;
+
+
+PROCESS(SYNTHESIZED_WIRE_29,S2)
+BEGIN
+if (S2 = '1') THEN
+	SYNTHESIZED_WIRE_30 <= SYNTHESIZED_WIRE_29;
+ELSE
+	SYNTHESIZED_WIRE_30 <= 'Z';
+END IF;
+END PROCESS;
+
+
+PROCESS(SYNTHESIZED_WIRE_30,SYNTHESIZED_WIRE_14)
+BEGIN
+if (SYNTHESIZED_WIRE_14 = '1') THEN
+	P2 <= SYNTHESIZED_WIRE_30;
+ELSE
+	P2 <= 'Z';
+END IF;
+END PROCESS;
+
+
+SYNTHESIZED_WIRE_14 <= NOT(SYNTHESIZED_WIRE_31);
+
+
+
+PROCESS(S3,gdfx_temp0)
+BEGIN
+if (gdfx_temp0 = '1') THEN
+	SYNTHESIZED_WIRE_33 <= S3;
+ELSE
+	SYNTHESIZED_WIRE_33 <= 'Z';
+END IF;
+END PROCESS;
+
+
+SYNTHESIZED_WIRE_25 <= NOT(S3);
+
+
+
+
+
+PROCESS(SYNTHESIZED_WIRE_25,gdfx_temp0)
+BEGIN
+if (gdfx_temp0 = '1') THEN
+	SYNTHESIZED_WIRE_33 <= SYNTHESIZED_WIRE_25;
+ELSE
+	SYNTHESIZED_WIRE_33 <= 'Z';
+END IF;
+END PROCESS;
+
+
+SYNTHESIZED_WIRE_19 <= NOT(S2);
+
+
+
+gdfx_temp0 <= NOT(gdfx_temp0);
+
+
+
+PROCESS(SYNTHESIZED_WIRE_32,SYNTHESIZED_WIRE_19)
+BEGIN
+if (SYNTHESIZED_WIRE_19 = '1') THEN
+	SYNTHESIZED_WIRE_26 <= SYNTHESIZED_WIRE_32;
+ELSE
+	SYNTHESIZED_WIRE_26 <= 'Z';
+END IF;
+END PROCESS;
+
+
+PROCESS(SYNTHESIZED_WIRE_33,S2)
+BEGIN
+if (S2 = '1') THEN
+	SYNTHESIZED_WIRE_26 <= SYNTHESIZED_WIRE_33;
+ELSE
+	SYNTHESIZED_WIRE_26 <= 'Z';
+END IF;
+END PROCESS;
+
+
+SYNTHESIZED_WIRE_4 <= NOT(SYNTHESIZED_WIRE_31);
+
+
+
+PROCESS(S3,SYNTHESIZED_WIRE_27)
+BEGIN
+if (SYNTHESIZED_WIRE_27 = '1') THEN
+	SYNTHESIZED_WIRE_28 <= S3;
+ELSE
+	SYNTHESIZED_WIRE_28 <= 'Z';
+END IF;
+END PROCESS;
+
+gdfx_temp0 <= S1;
+
+END bdf_type;

@@ -1,0 +1,55 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\axs3546\Desktop\Lab04
+T_opt
+VC^`H[5KT;6SEjGSa0O[oD3
+Z1 04 5 8 work part2 bdf_type 1
+=1-00224da1a1c8-54ecf202-1e7-1ab4
+Z2 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z3 OL;O;10.1d;51
+Z4 dC:\Users\axs3546\Desktop\Lab04
+T_opt1
+VQ87K6cDiN0dDjbR3z@P`L3
+R1
+=1-00224da1a205-54ef4abb-1c1-fdc
+R2
+n@_opt1
+R3
+Epart2
+Z5 w1424814498
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z8 dC:\Users\axs3546\Desktop\Lab05
+Z9 8C:/Users/axs3546/Desktop/Lab05/part2.vhd
+Z10 FC:/Users/axs3546/Desktop/Lab05/part2.vhd
+l0
+L24
+VJM5APo_48DAjLaJGiI4fY1
+Z11 OL;C;10.1d;51
+32
+Z12 !s108 1424814572.085000
+Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/axs3546/Desktop/Lab05/part2.vhd|
+Z14 !s107 C:/Users/axs3546/Desktop/Lab05/part2.vhd|
+Z15 o-work work -2002 -explicit
+Z16 tExplicit 1
+!s100 BS0@CP5NT:V6Idh`@4JHm1
+!i10b 1
+Abdf_type
+R6
+R7
+DEx4 work 5 part2 0 22 JM5APo_48DAjLaJGiI4fY1
+l47
+L35
+VDOnX0VK>=nXFLAm6TZO[D1
+R11
+32
+R12
+R13
+R14
+R15
+R16
+!s100 I<>e[CLIWmDfcJE317OB81
+!i10b 1

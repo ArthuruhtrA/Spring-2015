@@ -1,0 +1,9 @@
+G:/CMPE160/Lab07/AlmostMux74153.vhd {1 {vcom -work work -2002 -explicit -stats=none G:/CMPE160/Lab07/AlmostMux74153.vhd
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity AlmostMux74153
+-- Compiling architecture bdf_type of AlmostMux74153
+
+} {} {}}

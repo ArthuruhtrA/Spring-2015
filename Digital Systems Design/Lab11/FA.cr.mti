@@ -1,0 +1,83 @@
+./FA.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sande_000/Desktop/Lab11/FA.vhd
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity full_adder
+-- Compiling architecture df of full_adder
+-- Compiling architecture struct of full_adder
+-- Loading entity full_adder
+-- Compiling architecture ari of full_adder
+-- Loading entity full_adder
+
+} {} {}} C:/Users/axs3546/Desktop/Desktop/Lab11/gates.vhd {1 {vcom -work work -2002 -explicit -vopt C:/Users/axs3546/Desktop/Desktop/Lab11/gates.vhd
+Model Technology ModelSim SE-64 vcom 10.1d Compiler 2012.11 Nov  1 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity xor3
+-- Compiling architecture df of xor3
+-- Compiling entity and2
+-- Compiling architecture df of and2
+-- Compiling entity or3
+-- Compiling architecture df of or3
+
+} {} {}} ./gates.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sande_000/Desktop/Lab11/gates.vhd
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity xor3
+-- Compiling architecture df of xor3
+-- Compiling entity xor2
+-- Compiling architecture df of xor2
+-- Compiling entity and2
+-- Compiling architecture df of and2
+-- Compiling entity or3
+-- Compiling architecture df of or3
+-- Compiling entity or_gate
+-- Compiling architecture df of or_gate
+
+} {} {}} C:/Users/axs3546/Desktop/Desktop/Lab11/tb.vhd {1 {vcom -work work -2002 -explicit -vopt C:/Users/axs3546/Desktop/Desktop/Lab11/tb.vhd
+Model Technology ModelSim SE-64 vcom 10.1d Compiler 2012.11 Nov  1 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity tb
+-- Compiling architecture behavior of tb
+-- Loading entity full_adder
+
+} {} {}} ./tb.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\sande_000\Desktop\Lab11\tb.vhd}
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity tb
+-- Compiling architecture behavior of tb
+-- Loading entity full_adder
+
+} {} {}} C:/Users/sande_000/Desktop/Lab11/hadder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sande_000/Desktop/Lab11/hadder.vhd
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity hadder
+-- Compiling architecture df of hadder
+-- Compiling architecture struct of hadder
+-- Loading entity hadder
+
+} {} {}} C:/Users/axs3546/Desktop/Desktop/Lab11/FA.vhd {1 {vcom -work work -2002 -explicit -vopt C:/Users/axs3546/Desktop/Desktop/Lab11/FA.vhd
+Model Technology ModelSim SE-64 vcom 10.1d Compiler 2012.11 Nov  1 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity full_adder
+-- Compiling architecture df of full_adder
+-- Compiling architecture struct of full_adder
+-- Loading entity full_adder
+
+} {} {}}

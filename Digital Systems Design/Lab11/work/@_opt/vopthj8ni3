@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\axs3546\Desktop\Lab09
+T_opt
+VfU@APblMDE8XkzYbP8VJ61
+04 10 2 work full_adder df 1
+=1-00224da1a1c8-552fe198-3d2-172c
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.1d;51
+Efull_adder
+Z0 w1429201277
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\axs3546\Desktop\Desktop\Lab11
+Z4 8C:/Users/axs3546/Desktop/Desktop/Lab11/FA.vhd
+Z5 FC:/Users/axs3546/Desktop/Desktop/Lab11/FA.vhd
+l0
+L22
+VX5K0V`8[[ZN37ddU8FJ^<1
+Z6 OL;C;10.1d;51
+32
+Z7 !s108 1429201281.485000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/axs3546/Desktop/Desktop/Lab11/FA.vhd|
+Z9 !s107 C:/Users/axs3546/Desktop/Desktop/Lab11/FA.vhd|
+Z10 o-work work -2002 -explicit
+Z11 tExplicit 1
+!s100 M9KgBkc[IVf8GcBJQ]AiE3
+!i10b 1
+Adf
+R1
+R2
+DEx4 work 10 full_adder 0 22 X5K0V`8[[ZN37ddU8FJ^<1
+l36
+L33
+V150i6@e]49MN37lOn>`Vd0
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 _c9b3bS5l>Ml>L<Tkdl:>0
+!i10b 1

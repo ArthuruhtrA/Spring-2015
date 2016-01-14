@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\axs3546\Desktop\Lab05
+T_opt
+VGAU45JZ=zU0;S>LOC[71b2
+04 5 8 work lab09 bdf_type 1
+=1-00224da1a1c8-551d7de5-3b3-1468
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.1d;51
+Elab09
+Z0 w1427996059
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\axs3546\Desktop\Lab09
+Z4 8C:/Users/axs3546/Desktop/Lab09/Lab09.vhd
+Z5 FC:/Users/axs3546/Desktop/Lab09/Lab09.vhd
+l0
+L24
+V?TiSiJn<Y[HU<IA7L3cOm2
+Z6 OL;C;10.1d;51
+32
+Z7 !s108 1427996120.687000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/axs3546/Desktop/Lab09/Lab09.vhd|
+Z9 !s107 C:/Users/axs3546/Desktop/Lab09/Lab09.vhd|
+Z10 o-work work -2002 -explicit
+Z11 tExplicit 1
+!s100 T`50cMh1T]bj:Z:1JoPKQ1
+!i10b 1
+Abdf_type
+R1
+R2
+DEx4 work 5 lab09 0 22 ?TiSiJn<Y[HU<IA7L3cOm2
+l66
+L42
+V_FdGCeD:8c5[BWi<;YDkE3
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 Qi;TjCeNX<UXQEYCQmIB43
+!i10b 1

@@ -1,0 +1,78 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity tb is
+end tb;
+
+architecture behavior of tb is
+-- component declaration for the Unit Under Test (UUT)
+component full_adder
+port  (                       -- full adder inputs:
+       A    : in std_logic;   -- A, active high
+       B    : in std_logic;   -- B, active high
+       Cin  : in std_logic;   -- Carry In, active high
+       
+                              -- full adder outputs:
+       Sum  : out std_logic;  -- Sum, active high
+       Cout : out std_logic); -- Carry Out, active high
+end component;
+
+-- signals to simulate UUT inpute
+signal sA:   std_logic :='0';
+signal sB:   std_logic :='0';
+signal sCin: std_logic :='0';
+
+-- signals to read UUT outputs
+signal sSum1, sSum2, sSum3:   std_logic :='0';
+signal sCout1, sCout2, sCout3: std_logic :='0';
+
+-- compontent binding - this tels the simulator
+-- which entity-architecture pair will be simulated as UUT
+for UUT1 : full_adder use entity work.full_adder(df);
+for UUT2 : full_adder use entity work.full_adder(struct);
+for UUT3 : full_adder use entity work.full_adder(ari);
+
+begin
+-- Unit Under Test (UUT) instance
+UUT1: full_adder port map (A=>sA, B=>sB,  Cin=>sCin,
+                           Sum=>sSum1,  Cout=>sCout1);
+UUT2: full_adder port map (A=>sA, B=>sB,  Cin=>sCin,
+                           Sum=>sSum2,  Cout=>sCout2);
+UUT3: full_adder port map (A=>sA, B=>sB,  Cin=>sCin.
+                           Sum=>sSum3,  Cout=>sCout3);
+
+-- stimulus
+process
+variable vIn  : std_logic_vector (2 downto 0):="000";
+begin
+ (sCin, sB, sA) <= vIn;
+ wait for 50 ns;
+ vIn  :=  vIn + 1;
+end process;
+
+process
+variable vA, vB, vCin, vOut :std_logic_vector (1 downto 0):="00";
+begin
+  wait on sA, sB, sCin;
+  vA    :=  '0'& sA;
+  vB    :=  '0'& sB;
+  vCin  :=  '0'& sCin;
+  vOut  :=  vA + vB + vCin; -- expected outputs
+  wait for 20 ns;           -- expected delay
+  
+  assert (sSum1 = vOut(0) and sCout1 = vOut(1))
+    report "wrong output for df architecture at time:" & time'image(now)
+      severity warning;
+  
+  if (sSum2/=vOut(0) or sCout2/=vOut(1)) then -- alternative coding style
+    assert false
+      report "wrong output for struct architecture at time:" & time'image(now)
+        severity warning;
+  end if;
+  assert (sSum3 = vOut(0) and sCout3 = vOut(1))
+    report "wrong output for ari architecture at time:" & time'image(now)
+      severity warning;
+end process;
+
+end;

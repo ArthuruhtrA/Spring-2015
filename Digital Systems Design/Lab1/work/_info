@@ -1,0 +1,90 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\MentorGraphics\examples
+T_opt
+VNE3_eFWB]0EPfCn:kP^fc0
+04 4 8 work lab1 bdf_type 1
+=1-00224da1a1c8-54ca682e-167-1b50
+Z1 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z2 OL;O;10.1d;51
+Z3 dC:\MentorGraphics\examples
+T_opt1
+VCeRW><YQMIF1e[XfFdZ1m2
+04 7 8 work lab1ex2 bdf_type 1
+=6-00224da1a1c8-54ca730c-12c-6a0
+R1
+n@_opt1
+R2
+Elab1
+Z4 w1422550786
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 dC:\Users\axs3546\Desktop\AS
+Z8 8C:/Users/axs3546/Desktop/AS/Lab1.vhd
+Z9 FC:/Users/axs3546/Desktop/AS/Lab1.vhd
+l0
+L24
+VP36RPHccJOgRVUadk<7mT1
+Z10 OL;C;10.1d;51
+32
+Z11 !s108 1422553853.119000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/axs3546/Desktop/AS/Lab1.vhd|
+Z13 !s107 C:/Users/axs3546/Desktop/AS/Lab1.vhd|
+Z14 o-work work -2002 -explicit
+Z15 tExplicit 1
+!s100 oi>:fVd9c^z248?LKOAFK2
+!i10b 1
+Abdf_type
+R5
+R6
+DEx4 work 4 lab1 0 22 P36RPHccJOgRVUadk<7mT1
+l41
+L34
+V=X[bWhVPLCC2]KiQPbd;H2
+R10
+32
+R11
+R12
+R13
+R14
+R15
+!s100 P]bIAeg^F:GX2X8:e7To33
+!i10b 1
+Elab1ex2
+Z16 w1422553839
+R5
+R6
+R7
+Z17 8C:/Users/axs3546/Desktop/AS/Lab1ex2.vhd
+Z18 FC:/Users/axs3546/Desktop/AS/Lab1ex2.vhd
+l0
+L24
+V1EX4h>AomBQAIOke8;L7H2
+R10
+32
+Z19 !s108 1422553853.324000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/axs3546/Desktop/AS/Lab1ex2.vhd|
+Z21 !s107 C:/Users/axs3546/Desktop/AS/Lab1ex2.vhd|
+R14
+R15
+!s100 ZK`fP0L_C7^8l?1gR4CDV3
+!i10b 1
+Abdf_type
+R5
+R6
+DEx4 work 7 lab1ex2 0 22 1EX4h>AomBQAIOke8;L7H2
+l42
+L35
+VhTW5TSKSCB=99Keedi1g43
+R10
+32
+R19
+R20
+R21
+R14
+R15
+!s100 RCh<]]nYXS^2XJom=2=;b2
+!i10b 1

@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+dC:\MentorGraphics\examples
+T_opt
+VNE3_eFWB]0EPfCn:kP^fc0
+04 4 8 work lab1 bdf_type 1
+=1-00224da1a1c8-54ca682e-167-1b50
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.1d;51
+Elab1
+Z0 w1422550786
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\axs3546\Desktop\AS
+Z4 8C:/Users/axs3546/Desktop/AS/Lab1.vhd
+Z5 FC:/Users/axs3546/Desktop/AS/Lab1.vhd
+l0
+L24
+VP36RPHccJOgRVUadk<7mT1
+Z6 OL;C;10.1d;51
+32
+Z7 !s108 1422551046.704000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/axs3546/Desktop/AS/Lab1.vhd|
+Z9 !s107 C:/Users/axs3546/Desktop/AS/Lab1.vhd|
+Z10 o-work work -2002 -explicit
+Z11 tExplicit 1
+!s100 oi>:fVd9c^z248?LKOAFK2
+!i10b 1
+Abdf_type
+R1
+R2
+DEx4 work 4 lab1 0 22 P36RPHccJOgRVUadk<7mT1
+l41
+L34
+V=X[bWhVPLCC2]KiQPbd;H2
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 P]bIAeg^F:GX2X8:e7To33
+!i10b 1

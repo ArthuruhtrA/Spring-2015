@@ -1,0 +1,92 @@
+m255
+K3
+z0
+13
+cModel Technology
+Z0 dC:\MentorGraphics\examples
+T_opt
+V73ZZZjRl9T<:UT_FBV:]L0
+04 5 8 work lab07 bdf_type 1
+=1-00224da1a0af-550891e2-13d-10bc
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.1d;51
+R0
+Ealmostmux74153
+Z1 w1426727536
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dG:/CMPE160/Lab07
+Z5 8G:/CMPE160/Lab07/AlmostMux74153.vhd
+Z6 FG:/CMPE160/Lab07/AlmostMux74153.vhd
+l0
+L25
+VQ[dAkjZ[`Vl5JgB`XA5zb3
+!s100 z8]5HdJaF5b7[00=?ddZa2
+Z7 OV;C;10.3c;59
+32
+Z8 !s110 1426727838
+!i10b 1
+Z9 !s108 1426727835.901000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|G:/CMPE160/Lab07/AlmostMux74153.vhd|
+Z11 !s107 G:/CMPE160/Lab07/AlmostMux74153.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1
+Abdf_type
+R2
+R3
+DEx4 work 14 almostmux74153 0 22 Q[dAkjZ[`Vl5JgB`XA5zb3
+l46
+L34
+Ve;DQ>AfM5f1TNXcDDXMRe0
+!s100 OCdA]@2oQ8U2f1WmRL@@23
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Elab07
+Z14 w1426727770
+R2
+R3
+R4
+Z15 8G:/CMPE160/Lab07/Lab07.vhd
+Z16 FG:/CMPE160/Lab07/Lab07.vhd
+l0
+L25
+V>CDmf3jHYz?Hh_`bGOn^L0
+!s100 2a53jM3QEVEYceJ2YVGn]0
+R7
+32
+R8
+!i10b 1
+Z17 !s108 1426727836.833000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|G:/CMPE160/Lab07/Lab07.vhd|
+Z19 !s107 G:/CMPE160/Lab07/Lab07.vhd|
+!i113 1
+R12
+R13
+Abdf_type
+R2
+R3
+DEx4 work 5 lab07 0 22 >CDmf3jHYz?Hh_`bGOn^L0
+l55
+L36
+Vc]21m>j9d>i5i7ZRbX:BA3
+!s100 aaZ6iR7V]1fXeO`1N_`jM3
+R7
+32
+R8
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13

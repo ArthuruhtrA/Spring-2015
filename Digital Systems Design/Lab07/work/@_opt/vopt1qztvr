@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+dC:\MentorGraphics\examples
+T_opt
+V73ZZZjRl9T<:UT_FBV:]L0
+04 5 8 work lab07 bdf_type 1
+=1-00224da1a0af-550891e2-13d-10bc
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.1d;51
+Elab07
+Z0 w1426624884
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\axs3546\Desktop\Lab07
+Z4 8C:/Users/axs3546/Desktop/Lab07/Lab07.vhd
+Z5 FC:/Users/axs3546/Desktop/Lab07/Lab07.vhd
+l0
+L24
+Vjl1=;_]?ZOMYDTk=a`?mW1
+Z6 OL;C;10.1d;51
+32
+Z7 !s108 1426624983.151000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/axs3546/Desktop/Lab07/Lab07.vhd|
+Z9 !s107 C:/Users/axs3546/Desktop/Lab07/Lab07.vhd|
+Z10 o-work work -2002 -explicit
+Z11 tExplicit 1
+!s100 2nK@U_eoU3fgWD_cUI86U1
+!i10b 1
+Abdf_type
+R1
+R2
+DEx4 work 5 lab07 0 22 jl1=;_]?ZOMYDTk=a`?mW1
+l53
+L35
+Vf9ZL5VdaDiSm9m>`0TaMW0
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 R99V:hN^dzR4LMDCJmCg>2
+!i10b 1
